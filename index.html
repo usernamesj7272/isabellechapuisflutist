@@ -1,122 +1,151 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Isabelle Chapuis | Flutist</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <style>
-    body {
-      margin: 0;
-      background: #f8f5ef;
-      color: #2f2b26;
-     font-family: Georgia, "Garamond", serif;
-    }
+    <title>Isabelle Chapuis | Flutist</title>
 
-    .page {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 24px;
-      text-align: center;
-    }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    .card {
-      max-width: 760px;
-    }
+    <style>
 
-    .eyebrow {
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      font-size: 0.8rem;
-      margin-bottom: 28px;
-      color: #7d7468;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    h1 {
-      font-size: clamp(3rem, 9vw, 6.5rem);
-      font-weight: 400;
-      line-height: 0.95;
-      margin: 0;
-    }
+        body {
+            margin: 0;
+            background: #f8f5ef;
+            color: #16324a;
+            font-family: "Cormorant Garamond", serif;
+        }
 
-    .subtitle {
-      margin-top: 24px;
-      font-size: 1.35rem;
-      letter-spacing: 0.08em;
-      color: #5d554c;
-    }
+        .page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 70px 30px;
+        }
 
-    .line {
-      width: 80px;
-      height: 1px;
-      background: #b9aa97;
-      margin: 36px auto;
-    }
+        .content {
+            max-width: 900px;
+            text-align: center;
+        }
 
-    .text {
-      font-size: 1.15rem;
-      line-height: 1.8;
-      max-width: 580px;
-      margin: 0 auto;
-      color: #4a443d;
-    }
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            font-size: 1rem;
+            color: #9b8b76;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
 
-    .nav {
-      margin-top: 44px;
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-      font-size: 0.9rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
+        h1 {
+            margin: 0;
+            color: #16324a;
+            font-weight: 600;
+            font-size: clamp(5rem, 10vw, 9rem);
+            line-height: .88;
+        }
 
-    .nav span {
-      color: #7d7468;
-    }
+        .subtitle {
+            margin-top: 34px;
+            color: #16324a;
+            font-size: 2rem;
+            font-weight: 500;
+        }
 
-    footer {
-      position: fixed;
-      bottom: 24px;
-      left: 0;
-      right: 0;
-      text-align: center;
-      font-size: 0.8rem;
-      color: #9a9084;
-    }
-  </style>
+        .divider {
+            width: 120px;
+            height: 1px;
+            background: #b79963;
+            margin: 42px auto;
+        }
+
+        .intro {
+            max-width: 850px;
+            margin: 0 auto;
+            font-size: 1.45rem;
+            line-height: 1.7;
+            color: #16324a;
+        }
+
+        nav {
+            margin-top: 70px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #8d7c66;
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            font-size: 1rem;
+            margin: 0 18px;
+            transition: color .25s ease;
+        }
+
+        nav a:hover {
+            color: #16324a;
+        }
+
+        footer {
+            margin-top: 90px;
+            color: #8d7c66;
+            font-size: 1rem;
+        }
+
+    </style>
 </head>
 
 <body>
-  <main class="page">
-    <section class="card">
-      <div class="eyebrow">A new website is in preparation</div>
 
-      <h1>Isabelle<br>Chapuis</h1>
+<div class="page">
 
-      <div class="subtitle">Flutist · Teacher · Mentor</div>
+    <div class="content">
 
-      <div class="line"></div>
+        <div class="eyebrow">
+            A NEW WEBSITE IS IN PREPARATION
+        </div>
 
-      <p class="text">
-        A new home for Isabelle Chapuis is quietly taking shape —
-        honoring a lifetime devoted to music, teaching, and the French flute tradition.
-      </p>
+        <h1>
+            Isabelle<br>
+            Chapuis
+        </h1>
 
-      <div class="nav">
-        <span>Biography</span>
-        <span>Teaching</span>
-        <span>Lineage</span>
-        <span>Contact</span>
-      </div>
-    </section>
-  </main>
+        <div class="subtitle">
+            Flutist · Teacher · Lecturer
+        </div>
 
-  <footer>
-    isabellechapuisflutist.com
-  </footer>
+        <div class="divider"></div>
+
+        <div class="intro">
+            A new home for Isabelle Chapuis is quietly taking shape—honoring a lifetime devoted to music, teaching, and the French flute tradition.
+        </div>
+
+        <nav>
+            <a href="design.html#biography">Biography</a>
+            <a href="design.html#teaching">Teaching</a>
+            <a href="design.html#lineage">French Flute School</a>
+            <a href="design.html#contact">Contact</a>
+        </nav>
+
+        <footer>
+            isabellechapuisflutist.com
+        </footer>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+```
+
 </body>
 </html>
