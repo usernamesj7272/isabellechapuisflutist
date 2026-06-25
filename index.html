@@ -22,6 +22,16 @@
             font-family: "Cormorant Garamond", serif;
         }
 
+        .monogram {
+            position: fixed;
+            top: 34px;
+            right: 42px;
+            color: #b79963;
+            font-size: 2.1rem;
+            font-weight: 500;
+            letter-spacing: -0.08em;
+        }
+
         .page {
             min-height: 100vh;
             display: flex;
@@ -82,15 +92,44 @@
             text-transform: uppercase;
         }
 
+        .star {
+            margin-top: 22px;
+            color: #b79963;
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
         footer {
-            margin-top: 90px;
+            margin-top: 72px;
             color: #8d7c66;
             font-size: 1rem;
+        }
+
+        @media (max-width: 700px) {
+            .monogram {
+                top: 24px;
+                right: 26px;
+                font-size: 1.7rem;
+            }
+
+            .page {
+                padding: 95px 24px 55px;
+            }
+
+            .subtitle {
+                font-size: 1.55rem;
+            }
+
+            .intro {
+                font-size: 1.25rem;
+            }
         }
     </style>
 </head>
 
 <body>
+
+<div class="monogram">IC</div>
 
 <div class="page">
     <div class="content">
@@ -111,12 +150,14 @@
         <div class="divider"></div>
 
         <div class="intro">
-            A new home for Isabelle Chapuis is quietly taking shape—honoring a lifetime devoted to music, teaching, and the French flute school.
+            A new home for Isabelle Chapuis is quietly taking shape—honoring a lifetime devoted to music, teaching, and the French flute tradition.
         </div>
 
         <div class="soon">
             Launching Soon
         </div>
+
+        <div class="star">✦</div>
 
         <footer>
             isabellechapuisflutist.com
@@ -124,9 +165,6 @@
 
     </div>
 </div>
-
-</body>
-</html>
 
 </body>
 </html>
