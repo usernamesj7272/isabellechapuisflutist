@@ -1,16 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Isabelle Chapuis | Flutist</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #f8f5ef;
+      color: #2f2b26;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .card {
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      margin-bottom: 28px;
+      color: #7d7468;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 9vw, 6.5rem);
+      font-weight: 400;
+      line-height: 0.95;
+      margin: 0;
+    }
+
+    .subtitle {
+      margin-top: 24px;
+      font-size: 1.35rem;
+      letter-spacing: 0.08em;
+      color: #5d554c;
+    }
+
+    .line {
+      width: 80px;
+      height: 1px;
+      background: #b9aa97;
+      margin: 36px auto;
+    }
+
+    .text {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      max-width: 580px;
+      margin: 0 auto;
+      color: #4a443d;
+    }
+
+    .nav {
+      margin-top: 44px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .nav span {
+      color: #7d7468;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 24px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #9a9084;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Isabelle Chapuis</h1>
-  <p>Flutist, educator, and mentor.</p>
+  <main class="page">
+    <section class="card">
+      <div class="eyebrow">A new website is in preparation</div>
 
-  <h2>About</h2>
-  <p>Website coming soon.</p>
+      <h1>Isabelle<br>Chapuis</h1>
 
-  <h2>Contact</h2>
-  <p>Email coming soon.</p>
+      <div class="subtitle">Flutist · Teacher · Mentor</div>
+
+      <div class="line"></div>
+
+      <p class="text">
+        A new home for Isabelle Chapuis is quietly taking shape —
+        honoring a lifetime devoted to music, teaching, and the living
+        lineage of the French flute tradition.
+      </p>
+
+      <div class="nav">
+        <span>Biography</span>
+        <span>Teaching</span>
+        <span>Lineage</span>
+        <span>Contact</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    isabellechapuisflutist.com
+  </footer>
 </body>
 </html>
