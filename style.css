@@ -1,5 +1,19 @@
 body {
     background: #f7f3ed;
-    color: #1f3652;
+    color: #16324a;
     font-family: Georgia, serif;
+
+    margin: 0;
+    padding: 80px;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #6b7078;
+    font-size: 22px;
 }
