@@ -1190,10 +1190,30 @@ body.draft-site::before,
 
 .draft-site .bio-image img {
     display: block;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
+    max-height: min(54vh, 430px);
     height: auto;
     border: 1px solid var(--simple-rule);
     background: rgba(255, 255, 255, 0.46);
+}
+
+.draft-site .bio-image--lead img {
+    max-height: min(50vh, 360px);
+}
+
+.draft-site .bio-image--small img,
+.draft-site .bio-image--teaching-small img {
+    max-height: min(46vh, 320px);
+}
+
+.draft-site .bio-image--medium img,
+.draft-site .bio-image--medium-large img {
+    max-height: min(52vh, 380px);
+}
+
+.draft-site .bio-image--teaching-lead img {
+    max-height: min(52vh, 360px);
 }
 
 .draft-site .bio-image figcaption {
@@ -1527,4 +1547,5 @@ body.draft-site::before,
     .draft-site .bio-image--lead {
         margin-top: 0;
     }
+
 }
