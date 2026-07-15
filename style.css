@@ -992,3 +992,412 @@ h3 {
         font-size: clamp(1.85rem, 10vw, 2.8rem);
     }
 }
+
+/* End-of-file draft corrections for the multi-page client review site. */
+body.draft-site {
+    background: var(--simple-paper);
+    color: var(--simple-ink);
+}
+
+body.draft-site::before,
+.draft-site .hero::after,
+.draft-site .scroll-menu {
+    display: none;
+}
+
+.draft-site .site-header {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    min-height: auto;
+    padding: 28px clamp(22px, 5vw, 72px);
+    border-bottom: 1px solid var(--simple-rule);
+    background: transparent;
+    backdrop-filter: none;
+}
+
+.draft-site .site-nav {
+    display: flex;
+    width: auto;
+    gap: clamp(16px, 2vw, 30px);
+    padding-top: 0;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-shadow: none;
+}
+
+.draft-site .site-nav a {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+    border: 0;
+    color: var(--simple-ink);
+}
+
+.draft-site .site-nav a:hover,
+.draft-site .site-nav a:focus-visible,
+.draft-site .site-nav a[aria-current="page"] {
+    color: var(--simple-accent);
+}
+
+.draft-site .brand,
+.draft-site .brand-text,
+.draft-site .contact-icons a {
+    color: var(--simple-ink);
+}
+
+.draft-site .brand-mark,
+.draft-site .section-kicker,
+.draft-site .press-label,
+.draft-site .contact-form span {
+    color: var(--simple-accent);
+}
+
+.draft-site .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.72fr);
+    gap: clamp(34px, 7vw, 92px);
+    align-items: center;
+    max-width: 1160px;
+    min-height: 0;
+    margin: 0 auto;
+    padding: clamp(58px, 9vw, 112px) clamp(22px, 5vw, 72px);
+    border-bottom: 1px solid var(--simple-rule);
+    overflow: visible;
+}
+
+.draft-site .hero-copy {
+    display: block;
+    max-width: 620px;
+    min-height: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.draft-site h1 {
+    display: block;
+    margin: 0 0 28px;
+    color: var(--simple-ink);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(3.6rem, 8vw, 6.6rem);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.035em;
+    line-height: 0.98;
+    text-transform: none;
+}
+
+.draft-site h1 span {
+    display: block;
+}
+
+.draft-site h1 span:last-child {
+    padding-left: 0;
+}
+
+.draft-site .hero-intro {
+    max-width: 520px;
+    margin-bottom: 1em;
+    color: #2f2e2b;
+    font-size: clamp(1.2rem, 1.55vw, 1.34rem);
+    line-height: 1.72;
+}
+
+.draft-site .hero-note {
+    display: none;
+}
+
+.draft-site .hero-portrait {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+    margin: 0;
+    border: 1px solid var(--simple-rule);
+    background-position: 50% 18%;
+    background-size: cover;
+    opacity: 1;
+}
+
+.draft-site .section {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: clamp(64px, 9vw, 112px) clamp(22px, 5vw, 72px);
+    border-top: 0;
+    scroll-margin-top: 24px;
+}
+
+.draft-site .section + .section {
+    border-top: 1px solid var(--simple-rule);
+}
+
+.draft-site .page-section,
+.draft-site .biography-section,
+.draft-site .teaching-section,
+.draft-site .watch-section,
+.draft-site .contact-section {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.36fr) minmax(0, 1fr);
+    gap: clamp(34px, 7vw, 88px);
+    align-items: start;
+    background: transparent;
+}
+
+.draft-site .section-heading {
+    max-width: 420px;
+}
+
+.draft-site .section-kicker {
+    margin-bottom: 18px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+.draft-site .biography-text,
+.draft-site .section-copy,
+.draft-site .feature-grid p,
+.draft-site .press-feature p,
+.draft-site .contact-form input,
+.draft-site .contact-form textarea {
+    color: var(--simple-muted);
+    font-size: clamp(1.08rem, 1.25vw, 1.2rem);
+    line-height: 1.72;
+}
+
+.draft-site .biography-text {
+    max-width: 820px;
+    white-space: normal;
+}
+
+.draft-site .biography-text p,
+.draft-site .about-subsection p {
+    margin-bottom: 0.95em;
+}
+
+.draft-site .about-content,
+.draft-site .page-stack,
+.draft-site .watch-grid {
+    display: grid;
+    gap: 28px;
+}
+
+.draft-site .about-subsection {
+    max-width: 820px;
+}
+
+.draft-site .about-subsection h3 {
+    margin-bottom: 16px;
+    color: var(--simple-accent);
+    font-family: "Source Sans 3", Arial, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.draft-site .teaching-copy {
+    max-width: 760px;
+    font-size: clamp(1.18rem, 1.5vw, 1.38rem);
+    line-height: 1.72;
+}
+
+.draft-site .media-item {
+    display: grid;
+    gap: 16px;
+}
+
+.draft-site .media-item h3 {
+    margin-bottom: 0;
+}
+
+.draft-site .media-item p {
+    max-width: 720px;
+    margin: 0;
+    color: var(--simple-muted);
+    font-size: clamp(1.02rem, 1.18vw, 1.14rem);
+    line-height: 1.65;
+}
+
+.draft-site .media-embed {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--simple-rule);
+    background: #f4f1eb;
+    aspect-ratio: 16 / 9;
+    color: var(--simple-paper);
+    text-decoration: none;
+}
+
+.draft-site .media-embed img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.draft-site .media-embed::after {
+    content: "Watch on YouTube";
+    position: absolute;
+    right: 18px;
+    bottom: 16px;
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    background: rgba(36, 35, 33, 0.62);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.draft-site .press-feature,
+.draft-site .contact-card {
+    border: 1px solid var(--simple-rule);
+    background: rgba(255, 255, 255, 0.46);
+    box-shadow: none;
+}
+
+.draft-site .press-thumb.logo-thumb {
+    min-height: 112px;
+    aspect-ratio: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.58);
+}
+
+.draft-site .press-thumb.logo-thumb img {
+    display: block;
+    width: min(100%, 178px);
+    height: auto;
+    opacity: 0.86;
+}
+
+.draft-site .contact-form button {
+    border-color: var(--simple-rule);
+    color: var(--simple-ink);
+}
+
+.draft-site .carousel {
+    display: grid;
+    gap: 18px;
+    max-width: 820px;
+}
+
+.draft-site .carousel-frame {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--simple-rule);
+    background: rgba(255, 255, 255, 0.42);
+}
+
+.draft-site .carousel-slide {
+    display: none;
+    min-height: clamp(260px, 42vw, 460px);
+    place-items: center;
+    padding: clamp(28px, 6vw, 72px);
+}
+
+.draft-site .carousel-slide.is-active {
+    display: grid;
+}
+
+.draft-site .carousel-slide img {
+    display: block;
+    max-width: 100%;
+    max-height: min(68vh, 620px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.draft-site .placeholder-frame {
+    display: grid;
+    width: min(100%, 560px);
+    aspect-ratio: 4 / 3;
+    place-items: center;
+    border: 1px dashed rgba(154, 131, 95, 0.45);
+    background: rgba(251, 250, 246, 0.72);
+    color: var(--simple-muted);
+    font-size: clamp(1.05rem, 1.4vw, 1.22rem);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.draft-site .carousel-controls {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.draft-site .carousel-controls button {
+    min-width: 44px;
+    min-height: 44px;
+    border: 1px solid var(--simple-rule);
+    background: transparent;
+    color: var(--simple-ink);
+    cursor: pointer;
+    font-family: "Source Sans 3", Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.draft-site .carousel-status {
+    color: var(--simple-muted);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+    .draft-site .site-header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    .draft-site .nav-button {
+        display: grid;
+    }
+
+    .draft-site .site-nav {
+        display: none;
+        grid-column: 1 / -1;
+        width: 100%;
+        padding-top: 12px;
+    }
+
+    .draft-site .site-nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        border-top: 1px solid var(--simple-rule);
+    }
+
+    .draft-site .nav-toggle:checked ~ .site-nav {
+        display: block;
+    }
+
+    .draft-site .hero,
+    .draft-site .page-section,
+    .draft-site .biography-section,
+    .draft-site .teaching-section,
+    .draft-site .watch-section,
+    .draft-site .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .draft-site .hero {
+        padding-top: 48px;
+    }
+
+    .draft-site .hero-copy {
+        max-width: none;
+    }
+
+    .draft-site .hero-portrait {
+        max-width: 460px;
+    }
+}
