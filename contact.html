@@ -39,30 +39,32 @@
             </div>
             <div class="contact-card">
                 <p class="contact-intro">I would love to hear from you, please send me a message!</p>
-                <figure class="bio-image contact-photo">
-                    <a href="Images/Contact/Isabellegardenflute.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open photograph of Isabelle Chapuis in the garden full size">
-                        <img src="Images/Contact/Isabellegardenflute.jpeg" alt="Photograph of Isabelle Chapuis in the garden with flute" loading="lazy">
-                    </a>
-                </figure>
+                <div class="contact-layout">
+                    <figure class="bio-image contact-photo">
+                        <a href="Images/Contact/Isabellegardenflute.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open photograph of Isabelle Chapuis in the garden full size">
+                            <img src="Images/Contact/Isabellegardenflute.jpeg" alt="Photograph of Isabelle Chapuis in the garden with flute" loading="lazy">
+                        </a>
+                    </figure>
 
-                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="3d68e044-5674-4bf6-b20e-748871ba00a8">
-                    <input type="hidden" name="subject" value="New message from Isabelle Chapuis website">
-                    <input type="hidden" name="from_name" value="Isabelle Chapuis website">
-                    <label>
-                        <span>Name</span>
-                        <input type="text" name="name" autocomplete="name" required>
-                    </label>
-                    <label>
-                        <span>Email</span>
-                        <input type="email" name="email" autocomplete="email" required>
-                    </label>
-                    <label>
-                        <span>Message</span>
-                        <textarea name="message" rows="6" required></textarea>
-                    </label>
-                    <button type="submit">Send Message</button>
-                </form>
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="3d68e044-5674-4bf6-b20e-748871ba00a8">
+                        <input type="hidden" name="subject" value="New message from Isabelle Chapuis website">
+                        <input type="hidden" name="from_name" value="Isabelle Chapuis website">
+                        <label>
+                            <span>Name</span>
+                            <input type="text" name="name" autocomplete="name" required>
+                        </label>
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email" autocomplete="email" required>
+                        </label>
+                        <label>
+                            <span>Message</span>
+                            <textarea name="message" rows="6" required></textarea>
+                        </label>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
