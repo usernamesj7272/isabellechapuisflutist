@@ -1198,6 +1198,17 @@ body.draft-site::before,
     background: rgba(255, 255, 255, 0.46);
 }
 
+.draft-site .bio-image a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.draft-site .bio-image a:hover img,
+.draft-site .bio-image a:focus-visible img {
+    border-color: rgba(142, 114, 72, 0.48);
+}
+
 .draft-site .bio-image--lead img {
     max-height: min(50vh, 360px);
 }
@@ -1342,7 +1353,49 @@ body.draft-site::before,
 
 .draft-site .media-item {
     display: grid;
-    gap: 16px;
+    grid-template-columns: minmax(0, 1fr) minmax(150px, 210px);
+    gap: clamp(18px, 3vw, 34px);
+    align-items: start;
+}
+
+.draft-site .media-copy {
+    padding-top: 2px;
+    margin: 0;
+}
+
+.draft-site .media-channel-link {
+    margin-top: clamp(18px, 4vw, 36px);
+    padding-top: clamp(18px, 3vw, 28px);
+    border-top: 1px solid var(--simple-rule);
+    color: var(--simple-muted);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(1.35rem, 2vw, 1.75rem);
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.draft-site .media-channel-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--simple-ink);
+    font-weight: 500;
+    letter-spacing: 0;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.draft-site .media-channel-link svg {
+    width: 1.05em;
+    height: 1.05em;
+    fill: currentColor;
+    flex: 0 0 auto;
+    vertical-align: -0.12em;
+}
+
+.draft-site .media-channel-link a:hover,
+.draft-site .media-channel-link a:focus-visible {
+    color: var(--simple-accent);
 }
 
 .draft-site .media-item h3 {
@@ -1357,13 +1410,18 @@ body.draft-site::before,
     line-height: 1.65;
 }
 
+.draft-site .media-item .press-label {
+    margin-bottom: 8px;
+}
+
 .draft-site .media-embed {
     display: block;
     position: relative;
     overflow: hidden;
     border: 1px solid var(--simple-rule);
     background: #f4f1eb;
-    aspect-ratio: 16 / 9;
+    width: min(100%, 210px);
+    aspect-ratio: 1 / 1;
     color: var(--simple-paper);
     text-decoration: none;
 }
@@ -1379,16 +1437,36 @@ body.draft-site::before,
 .draft-site .media-embed::after {
     content: "Watch on YouTube";
     position: absolute;
-    right: 18px;
-    bottom: 16px;
-    padding: 8px 12px;
+    right: 10px;
+    bottom: 10px;
+    padding: 6px 8px;
     border: 1px solid rgba(255, 255, 255, 0.56);
     background: rgba(36, 35, 33, 0.62);
     color: #fff;
-    font-size: 0.78rem;
+    font-size: 0.66rem;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+}
+
+.draft-site .media-note {
+    max-width: 720px;
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid var(--simple-rule);
+}
+
+.draft-site .media-note h4 {
+    margin: 0 0 8px;
+    color: var(--simple-ink);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(1.18rem, 1.5vw, 1.38rem);
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.draft-site .media-note p {
+    font-size: clamp(1rem, 1.1vw, 1.1rem);
 }
 
 .draft-site .press-feature,
@@ -1398,16 +1476,41 @@ body.draft-site::before,
     box-shadow: none;
 }
 
+.draft-site .press-feature.media-item {
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.draft-site .press-feature.media-item a:not(.press-thumb) {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--simple-ink);
+    text-decoration-color: var(--simple-accent);
+}
+
 .draft-site .press-thumb.logo-thumb {
-    min-height: 112px;
-    aspect-ratio: auto;
-    padding: 20px;
+    display: grid;
+    width: min(100%, 210px);
+    aspect-ratio: 1 / 1;
+    min-height: 0;
+    padding: 18px;
+    place-items: center;
+    border: 1px solid var(--simple-rule);
     background: rgba(255, 255, 255, 0.58);
+    text-decoration: none;
+    transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.draft-site .press-thumb.logo-thumb:hover,
+.draft-site .press-thumb.logo-thumb:focus-visible {
+    border-color: rgba(142, 114, 72, 0.48);
+    background: rgba(255, 255, 255, 0.74);
 }
 
 .draft-site .press-thumb.logo-thumb img {
     display: block;
-    width: min(100%, 178px);
+    width: min(100%, 160px);
     height: auto;
     opacity: 0.86;
 }
@@ -1415,6 +1518,27 @@ body.draft-site::before,
 .draft-site .contact-form button {
     border-color: var(--simple-rule);
     color: var(--simple-ink);
+}
+
+.draft-site .contact-intro {
+    max-width: 720px;
+    margin: 0;
+    color: var(--simple-ink);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+    font-style: italic;
+    line-height: 1.3;
+}
+
+.draft-site .contact-photo {
+    justify-self: center;
+    width: min(100%, 520px);
+    margin: clamp(16px, 3vw, 30px) auto clamp(24px, 5vw, 46px);
+}
+
+.draft-site .contact-photo img {
+    width: 100%;
+    max-height: min(58vh, 540px);
 }
 
 .draft-site .carousel {
@@ -1534,6 +1658,23 @@ body.draft-site::before,
         max-width: 460px;
     }
 
+    .draft-site .media-item {
+        grid-template-columns: 1fr;
+    }
+
+    .draft-site .media-embed {
+        width: min(100%, 260px);
+    }
+
+    .draft-site .contact-photo {
+        max-width: 520px;
+    }
+
+    .draft-site .contact-photo img {
+        width: 100%;
+        max-height: none;
+    }
+
     .draft-site .bio-image--lead,
     .draft-site .bio-image--teaching-lead,
     .draft-site .bio-image--float-left,
@@ -1546,6 +1687,26 @@ body.draft-site::before,
 
     .draft-site .bio-image--lead {
         margin-top: 0;
+    }
+
+    .draft-site .bio-image--medium-large,
+    .draft-site .bio-image--teaching-lead,
+    .draft-site .bio-image--teaching-small {
+        max-width: 100%;
+    }
+
+    .draft-site .bio-image--medium-large.bio-image--float-left,
+    .draft-site .bio-image--teaching-small.bio-image--float-left,
+    .draft-site .bio-image--teaching-small.bio-image--float-right {
+        width: 100%;
+        max-width: 560px;
+    }
+
+    .draft-site .bio-image--medium-large img,
+    .draft-site .bio-image--teaching-lead img,
+    .draft-site .bio-image--teaching-small img {
+        width: 100%;
+        max-height: none;
     }
 
 }
