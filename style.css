@@ -1141,14 +1141,14 @@ body.draft-site::before,
 .draft-site .watch-section,
 .draft-site .contact-section {
     display: grid;
-    grid-template-columns: minmax(220px, 0.36fr) minmax(0, 1fr);
-    gap: clamp(34px, 7vw, 88px);
+    grid-template-columns: 1fr;
+    gap: clamp(18px, 4vw, 34px);
     align-items: start;
     background: transparent;
 }
 
 .draft-site .section-heading {
-    max-width: 420px;
+    max-width: 900px;
 }
 
 .draft-site .section-kicker {
