@@ -1520,6 +1520,46 @@ body.draft-site::before,
     color: var(--simple-ink);
 }
 
+.draft-site .thanks-section {
+    display: grid;
+    min-height: calc(100vh - 93px);
+    place-items: center;
+}
+
+.draft-site .thanks-card {
+    max-width: 720px;
+    text-align: center;
+}
+
+.draft-site .thanks-card h1 {
+    margin-bottom: 18px;
+}
+
+.draft-site .thanks-card .section-copy {
+    margin: 0 auto;
+}
+
+.draft-site .return-link {
+    display: inline-block;
+    margin-top: 28px;
+    border: 1px solid var(--simple-rule);
+    color: var(--simple-ink);
+    font-family: "Source Sans 3", Arial, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    padding: 13px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: border-color 180ms ease, color 180ms ease;
+}
+
+.draft-site .return-link:hover,
+.draft-site .return-link:focus-visible {
+    border-color: var(--simple-accent);
+    color: var(--simple-accent);
+}
+
 .draft-site .contact-intro {
     max-width: 720px;
     margin: 0;
