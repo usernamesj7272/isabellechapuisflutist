@@ -1215,7 +1215,8 @@ body.draft-site::before,
     margin-bottom: 1.22em;
 }
 
-.draft-site .about-subsection .drop-cap::first-letter {
+.draft-site .about-subsection .drop-cap::first-letter,
+.draft-site .teaching-copy .drop-cap::first-letter {
     float: left;
     margin: 0.08em 0.13em 0 0;
     color: var(--simple-accent);
@@ -1404,6 +1405,7 @@ body.draft-site::before,
 
 .draft-site .teaching-copy {
     max-width: 900px;
+    padding-top: clamp(12px, 2vw, 28px);
 }
 
 .draft-site .teaching-copy p {
