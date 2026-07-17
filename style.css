@@ -1354,8 +1354,11 @@ body.draft-site::before,
     max-width: 380px;
 }
 
-.draft-site .bio-image--teaching-final {
+.draft-site .bio-image--teaching-medium.bio-image--teaching-final {
+    width: min(46%, 430px);
+    max-width: 430px;
     margin-top: clamp(14px, 3vw, 30px);
+    text-align: right;
 }
 
 .draft-site .bio-image--right {
