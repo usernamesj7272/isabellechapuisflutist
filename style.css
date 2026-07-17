@@ -1114,8 +1114,8 @@ body.draft-site::before,
 .draft-site .hero-intro {
     max-width: 520px;
     margin-bottom: 1em;
-    color: #2f2e2b;
-    font-size: clamp(1.2rem, 1.55vw, 1.34rem);
+    color: #242321;
+    font-size: clamp(1.24rem, 1.6vw, 1.4rem);
     line-height: 1.72;
 }
 
@@ -1200,8 +1200,8 @@ body.draft-site::before,
 .draft-site .press-feature p,
 .draft-site .contact-form input,
 .draft-site .contact-form textarea {
-    color: #35332f;
-    font-size: clamp(1.16rem, 1.38vw, 1.3rem);
+    color: #242321;
+    font-size: clamp(1.2rem, 1.44vw, 1.36rem);
     line-height: 1.74;
 }
 
@@ -1281,9 +1281,9 @@ body.draft-site::before,
 
 .draft-site .bio-image figcaption {
     margin-top: 10px;
-    color: #35332f;
+    color: #2a2926;
     font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: clamp(1.08rem, 1.18vw, 1.18rem);
+    font-size: clamp(1.16rem, 1.3vw, 1.28rem);
     font-style: italic;
     line-height: 1.4;
 }
@@ -1472,8 +1472,8 @@ body.draft-site::before,
 .draft-site .media-item p {
     max-width: 720px;
     margin: 0;
-    color: #35332f;
-    font-size: clamp(1.16rem, 1.38vw, 1.3rem);
+    color: #242321;
+    font-size: clamp(1.2rem, 1.44vw, 1.36rem);
     line-height: 1.74;
 }
 
@@ -1533,7 +1533,8 @@ body.draft-site::before,
 }
 
 .draft-site .media-note p {
-    font-size: clamp(1rem, 1.1vw, 1.1rem);
+    color: #242321;
+    font-size: clamp(1.12rem, 1.24vw, 1.22rem);
 }
 
 .draft-site .press-feature,
