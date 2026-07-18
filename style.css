@@ -1356,10 +1356,7 @@ body.draft-site::before,
 }
 
 .draft-site .bio-image--teaching-medium.bio-image--teaching-final {
-    width: min(46%, 430px);
-    max-width: 430px;
     margin-top: clamp(14px, 3vw, 30px);
-    text-align: right;
 }
 
 .draft-site .bio-image--right {
