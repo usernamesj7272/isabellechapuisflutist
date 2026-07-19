@@ -1422,9 +1422,153 @@ body.draft-site::before,
     align-items: start;
 }
 
+.draft-site .media-grid .media-item {
+    grid-template-columns: minmax(0, 1fr) minmax(118px, 150px);
+    gap: clamp(16px, 2.4vw, 24px);
+    padding-top: 22px;
+    border-top: 1px solid var(--simple-rule);
+}
+
 .draft-site .media-copy {
     padding-top: 2px;
     margin: 0;
+}
+
+.draft-site .featured-recording {
+    display: grid;
+    grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
+    gap: clamp(24px, 5vw, 58px);
+    align-items: start;
+    padding-bottom: clamp(30px, 5vw, 54px);
+    border-bottom: 1px solid var(--simple-rule);
+}
+
+.draft-site .featured-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(34px, 5vw, 64px);
+    padding-top: clamp(10px, 2vw, 20px);
+}
+
+.draft-site .featured-pair .featured-recording {
+    grid-template-columns: minmax(0, 1fr) minmax(118px, 150px);
+    gap: clamp(16px, 2.4vw, 24px);
+    padding: 22px 0 0;
+    border-top: 1px solid var(--simple-rule);
+    border-bottom: 0;
+}
+
+.draft-site .recording-cover-placeholder {
+    display: grid;
+    width: min(100%, 280px);
+    aspect-ratio: 1 / 1;
+    place-items: center;
+    border: 1px solid var(--simple-rule);
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.56), rgba(236, 232, 223, 0.38)),
+        var(--simple-paper);
+    color: var(--simple-muted);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(1.26rem, 1.8vw, 1.7rem);
+    font-style: italic;
+    line-height: 1.28;
+    text-align: center;
+}
+
+.draft-site .recording-cover {
+    width: min(100%, 280px);
+}
+
+.draft-site .featured-pair .recording-cover {
+    width: min(100%, 150px);
+    order: 2;
+}
+
+.draft-site .recording-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--simple-rule);
+    background: var(--simple-paper);
+}
+
+.draft-site .recording-copy {
+    max-width: 720px;
+}
+
+.draft-site .recording-copy h2 {
+    margin: 0 0 18px;
+    color: var(--simple-ink);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(2rem, 3.4vw, 3rem);
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+.draft-site .featured-pair .recording-copy h2 {
+    margin-bottom: 0;
+    font-size: clamp(1.42rem, 1.8vw, 1.74rem);
+    line-height: 1.18;
+}
+
+.draft-site .recording-performers-label {
+    margin: 0 0 8px;
+    color: var(--simple-accent);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.draft-site .recording-performers {
+    display: grid;
+    gap: 3px;
+    margin: 0 0 18px;
+    padding: 0;
+    color: #242321;
+    font-size: clamp(1.12rem, 1.3vw, 1.24rem);
+    line-height: 1.55;
+    list-style: none;
+}
+
+.draft-site .featured-pair .recording-performers {
+    margin-top: 10px;
+    font-size: clamp(1rem, 1.08vw, 1.1rem);
+    line-height: 1.5;
+}
+
+.draft-site .recording-copy p:not(.press-label):not(.recording-performers-label) {
+    max-width: 720px;
+    margin: 0;
+    color: #242321;
+    font-size: clamp(1.2rem, 1.44vw, 1.36rem);
+    line-height: 1.74;
+}
+
+.draft-site .featured-pair .recording-copy p:not(.press-label):not(.recording-performers-label) {
+    font-size: clamp(1.2rem, 1.44vw, 1.36rem);
+    line-height: 1.74;
+}
+
+.draft-site .recording-button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 10px 16px;
+    border: 1px solid var(--simple-rule);
+    color: var(--simple-ink);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: border-color 180ms ease, color 180ms ease, background-color 180ms ease;
+}
+
+.draft-site .recording-button:hover,
+.draft-site .recording-button:focus-visible {
+    border-color: rgba(142, 114, 72, 0.48);
+    background: rgba(255, 255, 255, 0.46);
+    color: var(--simple-accent);
 }
 
 .draft-site .media-channel-link {
@@ -1462,6 +1606,27 @@ body.draft-site::before,
     color: var(--simple-accent);
 }
 
+.draft-site .media-collection {
+    display: grid;
+    gap: clamp(20px, 3vw, 32px);
+}
+
+.draft-site .media-collection h2 {
+    margin: 0;
+    color: var(--simple-ink);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(2rem, 3.4vw, 3rem);
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+.draft-site .media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(32px, 5vw, 64px);
+    row-gap: clamp(34px, 5vw, 58px);
+}
+
 .draft-site .media-item h3 {
     margin-bottom: 0;
 }
@@ -1490,6 +1655,11 @@ body.draft-site::before,
     text-decoration: none;
 }
 
+.draft-site .media-grid .media-embed,
+.draft-site .media-grid .press-thumb.logo-thumb {
+    width: min(100%, 150px);
+}
+
 .draft-site .media-embed img {
     position: absolute;
     inset: 0;
@@ -1514,8 +1684,9 @@ body.draft-site::before,
 }
 
 .draft-site .media-note {
+    grid-column: 1 / -1;
     max-width: 720px;
-    margin-top: 18px;
+    margin-top: 4px;
     padding-top: 18px;
     border-top: 1px solid var(--simple-rule);
 }
@@ -1778,6 +1949,26 @@ body.draft-site::before,
         grid-template-columns: 1fr;
     }
 
+    .draft-site .media-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .draft-site .featured-pair {
+        grid-template-columns: 1fr;
+    }
+
+    .draft-site .media-grid .media-item {
+        grid-template-columns: minmax(0, 1fr) minmax(120px, 160px);
+    }
+
+    .draft-site .featured-recording {
+        grid-template-columns: 1fr;
+    }
+
+    .draft-site .recording-cover-placeholder {
+        width: min(100%, 320px);
+    }
+
     .draft-site .media-embed {
         width: min(100%, 260px);
     }
@@ -1835,4 +2026,24 @@ body.draft-site::before,
         max-height: none;
     }
 
+}
+
+@media (max-width: 620px) {
+    .draft-site .media-grid .media-item {
+        grid-template-columns: 1fr;
+    }
+
+    .draft-site .featured-pair .featured-recording {
+        grid-template-columns: 1fr;
+    }
+
+    .draft-site .featured-pair .recording-cover {
+        order: 0;
+        width: min(100%, 260px);
+    }
+
+    .draft-site .media-grid .media-embed,
+    .draft-site .media-grid .press-thumb.logo-thumb {
+        width: min(100%, 260px);
+    }
 }
