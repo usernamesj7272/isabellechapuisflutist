@@ -2054,10 +2054,8 @@ body.draft-site::before,
 
     .draft-site .nav-button {
         display: inline-grid;
-        grid-template-columns: auto 22px;
-        grid-template-rows: repeat(3, 2px);
-        column-gap: 8px;
-        row-gap: 6px;
+        grid-template-columns: auto 24px;
+        column-gap: 10px;
         height: 40px;
         align-content: center;
         align-items: center;
@@ -2070,32 +2068,12 @@ body.draft-site::before,
     }
 
     .draft-site .nav-button span:not(.nav-button-text) {
-        display: block;
-        grid-column: 2;
-        width: 22px;
-        height: 2px;
-        min-height: 2px;
-        border-top: 2px solid #242321;
-        background: #242321;
-        opacity: 1;
-    }
-
-    .draft-site .nav-button span:nth-of-type(2) {
-        grid-row: 1;
-    }
-
-    .draft-site .nav-button span:nth-of-type(3) {
-        grid-row: 2;
-    }
-
-    .draft-site .nav-button span:nth-of-type(4) {
-        grid-row: 3;
+        display: none;
     }
 
     .draft-site .nav-button .nav-button-text {
         display: block;
         grid-column: 1;
-        grid-row: 1 / 4;
         width: auto;
         height: auto;
         background: transparent;
@@ -2105,6 +2083,18 @@ body.draft-site::before,
         letter-spacing: 0.12em;
         line-height: 1;
         text-transform: uppercase;
+    }
+
+    .draft-site .nav-button::after {
+        content: "";
+        display: block;
+        grid-column: 2;
+        width: 24px;
+        height: 18px;
+        background:
+            linear-gradient(#242321, #242321) 0 0 / 24px 2px no-repeat,
+            linear-gradient(#242321, #242321) 0 8px / 24px 2px no-repeat,
+            linear-gradient(#242321, #242321) 0 16px / 24px 2px no-repeat;
     }
 
     .draft-site .site-nav {
