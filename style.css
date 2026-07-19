@@ -1782,8 +1782,9 @@ body.draft-site::before,
 }
 
 .draft-site .press-feature.media-item {
-    padding: 0;
+    padding: 22px 0 0;
     border: 0;
+    border-top: 1px solid var(--simple-rule);
     background: transparent;
 }
 
