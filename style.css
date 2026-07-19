@@ -2067,7 +2067,7 @@ body.draft-site::before,
         cursor: pointer;
     }
 
-    .draft-site .nav-button span:not(.nav-button-text) {
+    .draft-site .nav-button span:not(.nav-button-text):not(.nav-icon) {
         display: none;
     }
 
@@ -2085,16 +2085,14 @@ body.draft-site::before,
         text-transform: uppercase;
     }
 
-    .draft-site .nav-button::after {
-        content: "";
+    .draft-site .nav-icon {
         display: block;
         grid-column: 2;
-        width: 24px;
-        height: 18px;
-        background:
-            linear-gradient(#242321, #242321) 0 0 / 24px 2px no-repeat,
-            linear-gradient(#242321, #242321) 0 8px / 24px 2px no-repeat,
-            linear-gradient(#242321, #242321) 0 16px / 24px 2px no-repeat;
+        color: #242321;
+        font-family: "Source Sans 3", Arial, sans-serif;
+        font-size: 1.45rem;
+        font-weight: 600;
+        line-height: 0.85;
     }
 
     .draft-site .site-nav {
