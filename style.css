@@ -1481,12 +1481,14 @@ body.draft-site::before,
 
 .draft-site .featured-pair .recording-cover {
     width: min(100%, 150px);
+    max-width: 150px;
     order: 2;
 }
 
 .draft-site .recording-cover img {
     display: block;
     width: 100%;
+    max-width: 150px;
     height: auto;
     border: 1px solid var(--simple-rule);
     background: var(--simple-paper);
@@ -1949,20 +1951,8 @@ body.draft-site::before,
         grid-template-columns: 1fr;
     }
 
-    .draft-site .media-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .draft-site .featured-pair {
-        grid-template-columns: 1fr;
-    }
-
     .draft-site .media-grid .media-item {
         grid-template-columns: minmax(0, 1fr) minmax(120px, 160px);
-    }
-
-    .draft-site .featured-recording {
-        grid-template-columns: 1fr;
     }
 
     .draft-site .recording-cover-placeholder {
@@ -2029,6 +2019,11 @@ body.draft-site::before,
 }
 
 @media (max-width: 620px) {
+    .draft-site .media-grid,
+    .draft-site .featured-pair {
+        grid-template-columns: 1fr;
+    }
+
     .draft-site .media-grid .media-item {
         grid-template-columns: 1fr;
     }
@@ -2040,6 +2035,11 @@ body.draft-site::before,
     .draft-site .featured-pair .recording-cover {
         order: 0;
         width: min(100%, 260px);
+        max-width: 260px;
+    }
+
+    .draft-site .featured-pair .recording-cover img {
+        max-width: 260px;
     }
 
     .draft-site .media-grid .media-embed,
