@@ -2063,8 +2063,9 @@ body.draft-site::before,
         align-items: center;
         justify-content: center;
         width: auto;
-        padding: 0 12px;
-        border: 1px solid var(--simple-rule);
+        padding: 0 14px;
+        border: 1px solid rgba(142, 114, 72, 0.48);
+        background: rgba(251, 248, 242, 0.78);
         cursor: pointer;
     }
 
@@ -2073,7 +2074,7 @@ body.draft-site::before,
         grid-column: 2;
         width: 22px;
         height: 2px;
-        background: var(--simple-ink);
+        background: #242321;
     }
 
     .draft-site .nav-button span:nth-of-type(2) {
@@ -2095,8 +2096,8 @@ body.draft-site::before,
         width: auto;
         height: auto;
         background: transparent;
-        color: var(--simple-ink);
-        font-size: 0.72rem;
+        color: #242321;
+        font-size: 0.76rem;
         font-weight: 700;
         letter-spacing: 0.12em;
         line-height: 1;
