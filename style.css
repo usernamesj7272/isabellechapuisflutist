@@ -2057,9 +2057,10 @@ body.draft-site::before,
         grid-template-columns: auto 24px;
         column-gap: 10px;
         height: 40px;
+        min-width: 100px;
         align-content: center;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
         width: auto;
         padding: 0;
         border: 0;
@@ -2092,7 +2093,7 @@ body.draft-site::before,
         font-family: "Source Sans 3", Arial, sans-serif;
         font-size: 1.45rem;
         font-weight: 600;
-        line-height: 0.85;
+        line-height: 1;
     }
 
     .draft-site .site-nav {
