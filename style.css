@@ -1071,12 +1071,20 @@ body.draft-site::before,
     padding: 0;
     border: 0;
     color: var(--simple-ink);
+    text-decoration: none;
+    text-underline-offset: 0.45em;
+    text-decoration-thickness: 1px;
 }
 
 .draft-site .site-nav a:hover,
 .draft-site .site-nav a:focus-visible,
 .draft-site .site-nav a[aria-current="page"] {
     color: var(--simple-accent);
+}
+
+.draft-site .site-nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-decoration-color: currentColor;
 }
 
 .draft-site .brand,
@@ -2216,6 +2224,7 @@ body.draft-site::before,
     }
 
     .draft-site .bio-image--medium-large.bio-image--float-left,
+    .draft-site .bio-image--teaching-lead.bio-image--float-right,
     .draft-site .bio-image--teaching-medium.bio-image--float-left,
     .draft-site .bio-image--teaching-medium.bio-image--float-right,
     .draft-site .bio-image--teaching-small.bio-image--float-left,
