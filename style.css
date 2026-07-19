@@ -1754,6 +1754,15 @@ body.draft-site::before,
     opacity: 0.86;
 }
 
+.draft-site .press-thumb.logo-thumb span {
+    color: var(--simple-ink);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(1.22rem, 1.6vw, 1.5rem);
+    font-style: italic;
+    line-height: 1.08;
+    text-align: center;
+}
+
 .draft-site .contact-form button {
     border-color: var(--simple-rule);
     color: var(--simple-ink);
