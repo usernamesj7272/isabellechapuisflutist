@@ -1277,13 +1277,17 @@ body.draft-site::before,
 .draft-site .about-subsection .drop-cap::first-letter,
 .draft-site .teaching-copy .drop-cap::first-letter {
     float: left;
-    margin: 0.08em 0.13em 0 0;
+    margin: 0.08em 0.12em 0 0;
     color: var(--simple-accent);
-    font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: 4.6em;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 0.72;
+    font-family: "Great Vibes", "Cormorant Garamond", Georgia, serif;
+    font-size: 4.9em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.78;
+}
+
+.draft-site .teaching-copy .drop-cap::first-letter {
+    margin-top: 0.04em;
 }
 
 .draft-site .bio-image {
