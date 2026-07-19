@@ -891,7 +891,9 @@ h3 {
     .nav-button {
         display: inline-grid;
         grid-template-columns: auto 22px;
-        gap: 8px;
+        grid-template-rows: repeat(3, 2px);
+        column-gap: 8px;
+        row-gap: 6px;
         width: auto;
         height: 40px;
         align-content: center;
@@ -906,8 +908,20 @@ h3 {
         display: block;
         grid-column: 2;
         width: 22px;
-        height: 1px;
+        height: 2px;
         background: var(--navy);
+    }
+
+    .nav-button span:nth-of-type(2) {
+        grid-row: 1;
+    }
+
+    .nav-button span:nth-of-type(3) {
+        grid-row: 2;
+    }
+
+    .nav-button span:nth-of-type(4) {
+        grid-row: 3;
     }
 
     .nav-button .nav-button-text {
@@ -1943,7 +1957,9 @@ body.draft-site::before,
     .draft-site .nav-button {
         display: inline-grid;
         grid-template-columns: auto 22px;
-        gap: 8px;
+        grid-template-rows: repeat(3, 2px);
+        column-gap: 8px;
+        row-gap: 6px;
         height: 40px;
         align-content: center;
         align-items: center;
@@ -1958,8 +1974,20 @@ body.draft-site::before,
         display: block;
         grid-column: 2;
         width: 22px;
-        height: 1px;
+        height: 2px;
         background: var(--simple-ink);
+    }
+
+    .draft-site .nav-button span:nth-of-type(2) {
+        grid-row: 1;
+    }
+
+    .draft-site .nav-button span:nth-of-type(3) {
+        grid-row: 2;
+    }
+
+    .draft-site .nav-button span:nth-of-type(4) {
+        grid-row: 3;
     }
 
     .draft-site .nav-button .nav-button-text {
