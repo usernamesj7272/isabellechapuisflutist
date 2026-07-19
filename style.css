@@ -1577,7 +1577,7 @@ body.draft-site::before,
     margin-top: clamp(18px, 4vw, 36px);
     padding-top: clamp(18px, 3vw, 28px);
     border-top: 1px solid var(--simple-rule);
-    color: var(--simple-muted);
+    color: var(--simple-ink);
     font-family: "Cormorant Garamond", Georgia, serif;
     font-size: clamp(1.35rem, 2vw, 1.75rem);
     font-style: italic;
@@ -1593,11 +1593,12 @@ body.draft-site::before,
     letter-spacing: 0;
     text-decoration: none;
     text-transform: none;
+    white-space: nowrap;
 }
 
 .draft-site .media-channel-link svg {
-    width: 1.05em;
-    height: 1.05em;
+    width: 0.95em;
+    height: 0.95em;
     fill: currentColor;
     flex: 0 0 auto;
     vertical-align: -0.12em;
@@ -2019,6 +2020,10 @@ body.draft-site::before,
 }
 
 @media (max-width: 620px) {
+    .draft-site .media-channel-link a {
+        white-space: normal;
+    }
+
     .draft-site .media-grid,
     .draft-site .featured-pair {
         grid-template-columns: 1fr;
