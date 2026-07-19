@@ -2061,9 +2061,9 @@ body.draft-site::before,
         align-items: center;
         justify-content: center;
         width: auto;
-        padding: 0 14px;
-        border: 1px solid rgba(142, 114, 72, 0.48);
-        background: rgba(251, 248, 242, 0.78);
+        padding: 0;
+        border: 0;
+        background: transparent;
         cursor: pointer;
     }
 
