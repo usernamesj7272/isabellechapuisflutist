@@ -1160,6 +1160,10 @@ body.draft-site::before,
     display: none;
 }
 
+.draft-site .hero-media {
+    width: 100%;
+}
+
 .draft-site .hero-portrait {
     position: relative;
     inset: auto;
@@ -1172,6 +1176,16 @@ body.draft-site::before,
     background-position: 50% 18%;
     background-size: cover;
     opacity: 1;
+}
+
+.draft-site .photo-credit {
+    margin: 10px 0 0;
+    color: #56514b;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(1rem, 1.08vw, 1.12rem);
+    font-style: italic;
+    line-height: 1.35;
+    text-align: right;
 }
 
 .draft-site .section {
