@@ -145,6 +145,10 @@ figure {
     display: none;
 }
 
+.nav-button-text {
+    display: none;
+}
+
 .hero {
     position: relative;
     display: grid;
@@ -885,21 +889,40 @@ h3 {
     }
 
     .nav-button {
-        display: grid;
-        gap: 6px;
-        width: 40px;
+        display: inline-grid;
+        grid-template-columns: auto 22px;
+        gap: 8px;
+        width: auto;
         height: 40px;
         align-content: center;
+        align-items: center;
         justify-content: center;
+        padding: 0 12px;
         border: 1px solid var(--gold-pale);
         cursor: pointer;
     }
 
     .nav-button span {
         display: block;
+        grid-column: 2;
         width: 22px;
         height: 1px;
         background: var(--navy);
+    }
+
+    .nav-button .nav-button-text {
+        display: block;
+        grid-column: 1;
+        grid-row: 1 / 4;
+        width: auto;
+        height: auto;
+        background: transparent;
+        color: var(--navy);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        line-height: 1;
+        text-transform: uppercase;
     }
 
     .site-nav {
@@ -1445,7 +1468,7 @@ body.draft-site::before,
 
 .draft-site .featured-pair {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
     gap: clamp(34px, 5vw, 64px);
     padding-top: clamp(10px, 2vw, 20px);
 }
@@ -1482,6 +1505,13 @@ body.draft-site::before,
 .draft-site .featured-pair .recording-cover {
     width: min(100%, 150px);
     max-width: 150px;
+    order: 2;
+}
+
+.draft-site .featured-pair .recording-cover-placeholder {
+    width: min(100%, 150px);
+    max-width: 150px;
+    aspect-ratio: 1 / 1;
     order: 2;
 }
 
@@ -1672,7 +1702,7 @@ body.draft-site::before,
 }
 
 .draft-site .media-embed::after {
-    content: "Watch on YouTube";
+    content: "Open on YouTube";
     position: absolute;
     right: 10px;
     bottom: 10px;
@@ -1911,7 +1941,40 @@ body.draft-site::before,
     }
 
     .draft-site .nav-button {
-        display: grid;
+        display: inline-grid;
+        grid-template-columns: auto 22px;
+        gap: 8px;
+        height: 40px;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding: 0 12px;
+        border: 1px solid var(--simple-rule);
+        cursor: pointer;
+    }
+
+    .draft-site .nav-button span {
+        display: block;
+        grid-column: 2;
+        width: 22px;
+        height: 1px;
+        background: var(--simple-ink);
+    }
+
+    .draft-site .nav-button .nav-button-text {
+        display: block;
+        grid-column: 1;
+        grid-row: 1 / 4;
+        width: auto;
+        height: auto;
+        background: transparent;
+        color: var(--simple-ink);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        line-height: 1;
+        text-transform: uppercase;
     }
 
     .draft-site .site-nav {
@@ -2047,6 +2110,12 @@ body.draft-site::before,
     }
 
     .draft-site .featured-pair .recording-cover {
+        order: 0;
+        width: min(100%, 260px);
+        max-width: 260px;
+    }
+
+    .draft-site .featured-pair .recording-cover-placeholder {
         order: 0;
         width: min(100%, 260px);
         max-width: 260px;
