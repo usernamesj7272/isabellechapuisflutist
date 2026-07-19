@@ -17,6 +17,18 @@
             slides[current].classList.add("is-active");
         }
 
+        const preloadNearby = () => {
+            [current - 1, current + 1].forEach((index) => {
+                const slide = slides[(index + slides.length) % slides.length];
+                const image = slide.querySelector("img");
+
+                if (image) {
+                    const preload = new Image();
+                    preload.src = image.currentSrc || image.src;
+                }
+            });
+        };
+
         const update = (index) => {
             slides[current].classList.remove("is-active");
             current = (index + slides.length) % slides.length;
@@ -25,6 +37,8 @@
             if (status) {
                 status.textContent = `${current + 1} / ${slides.length}`;
             }
+
+            preloadNearby();
         };
 
         previous.addEventListener("click", () => update(current - 1));
@@ -41,5 +55,7 @@
                 update(current + 1);
             }
         });
+
+        preloadNearby();
     });
 })();
