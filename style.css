@@ -2046,7 +2046,7 @@ body.draft-site::before,
 
 .draft-site .gallery-arrow {
     display: grid;
-    width: 48px;
+    width: 62px;
     aspect-ratio: 1;
     place-items: center;
     border: 1px solid var(--simple-rule);
@@ -2055,7 +2055,7 @@ body.draft-site::before,
     color: var(--simple-ink);
     cursor: pointer;
     font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: 2.2rem;
+    font-size: 3rem;
     line-height: 1;
     transition: border-color 180ms ease, color 180ms ease, background-color 180ms ease;
 }
@@ -2212,13 +2212,13 @@ body.draft-site::before,
     }
 
     .draft-site .gallery-carousel {
-        grid-template-columns: 42px minmax(0, 1fr) 42px;
-        gap: 10px;
+        grid-template-columns: 54px minmax(0, 1fr) 54px;
+        gap: 12px;
     }
 
     .draft-site .gallery-arrow {
-        width: 42px;
-        font-size: 1.9rem;
+        width: 54px;
+        font-size: 2.5rem;
     }
 
     .draft-site .bio-image--lead,
@@ -2302,13 +2302,13 @@ body.draft-site::before,
     }
 
     .draft-site .gallery-carousel {
-        grid-template-columns: 38px minmax(0, 1fr) 38px;
+        grid-template-columns: 48px minmax(0, 1fr) 48px;
         gap: 8px;
     }
 
     .draft-site .gallery-arrow {
-        width: 38px;
-        font-size: 1.7rem;
+        width: 48px;
+        font-size: 2.25rem;
     }
 
     .draft-site .gallery-slide img {
