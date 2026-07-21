@@ -1858,6 +1858,14 @@ body.draft-site::before,
     margin: 0 auto;
 }
 
+.draft-site .thanks-domino {
+    display: block;
+    width: clamp(86px, 10vw, 124px);
+    height: auto;
+    margin: 30px auto 0;
+    opacity: 0.94;
+}
+
 .draft-site .return-link {
     display: inline-block;
     margin-top: 28px;
