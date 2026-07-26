@@ -2295,6 +2295,22 @@ body.draft-site::before,
     margin: 0;
 }
 
+.draft-site .site-footer .site-credit {
+    margin-top: 4px;
+    font-size: 0.84rem;
+}
+
+.draft-site .site-footer a {
+    color: inherit;
+    text-decoration-color: rgba(154, 131, 95, 0.5);
+    text-underline-offset: 3px;
+}
+
+.draft-site .site-footer a:hover,
+.draft-site .site-footer a:focus-visible {
+    color: var(--simple-accent);
+}
+
 @media (max-width: 900px) {
     .draft-site .site-header {
         display: grid;
