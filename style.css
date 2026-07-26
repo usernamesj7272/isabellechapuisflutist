@@ -2047,6 +2047,43 @@ body.draft-site::before,
     margin-bottom: clamp(28px, 5vw, 54px);
 }
 
+.draft-site .gallery-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 14px;
+    max-width: 760px;
+    margin: clamp(-18px, -2vw, -8px) auto clamp(28px, 4vw, 44px);
+}
+
+.draft-site .gallery-filter {
+    border: 1px solid rgba(142, 114, 72, 0.28);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.28);
+    color: var(--simple-ink);
+    cursor: pointer;
+    font-family: "Source Sans 3", Arial, sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    padding: 0.68rem 1rem;
+    text-transform: uppercase;
+    transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.draft-site .gallery-filter:hover,
+.draft-site .gallery-filter:focus-visible,
+.draft-site .gallery-filter.is-active {
+    border-color: rgba(142, 114, 72, 0.58);
+    background: rgba(255, 255, 255, 0.52);
+    color: var(--simple-accent);
+}
+
+.draft-site .gallery-filter:focus-visible {
+    outline: 2px solid rgba(142, 114, 72, 0.26);
+    outline-offset: 3px;
+}
+
 .draft-site .gallery-carousel {
     display: grid;
     grid-template-columns: 48px minmax(0, 1fr) 48px;

@@ -46,7 +46,9 @@
         const previous = carousel.querySelector("[data-carousel-prev]");
         const next = carousel.querySelector("[data-carousel-next]");
         const status = carousel.querySelector(".carousel-status");
+        const filters = Array.from(carousel.parentElement.querySelectorAll("[data-gallery-filter]"));
         let current = slides.findIndex((slide) => slide.classList.contains("is-active"));
+        let activeFilter = "all";
 
         if (!slides.length || !previous || !next) {
             return;
@@ -57,9 +59,31 @@
             slides[current].classList.add("is-active");
         }
 
+        const getVisibleIndexes = () => slides
+            .map((slide, index) => ({ slide, index }))
+            .filter(({ slide }) => {
+                if (activeFilter === "all") {
+                    return true;
+                }
+
+                const tags = (slide.dataset.galleryTags || "").split(/\s+/);
+                return tags.includes(activeFilter);
+            })
+            .map(({ index }) => index);
+
+        const getVisiblePosition = () => getVisibleIndexes().indexOf(current);
+
         const preloadNearby = () => {
-            [current - 1, current + 1].forEach((index) => {
-                const slide = slides[(index + slides.length) % slides.length];
+            const visibleIndexes = getVisibleIndexes();
+
+            if (!visibleIndexes.length) {
+                return;
+            }
+
+            const position = getVisiblePosition();
+
+            [position - 1, position + 1].forEach((index) => {
+                const slide = slides[visibleIndexes[(index + visibleIndexes.length) % visibleIndexes.length]];
                 const image = slide.querySelector("img");
 
                 if (image) {
@@ -70,12 +94,24 @@
         };
 
         let update = (index) => {
+            const visibleIndexes = getVisibleIndexes();
+
+            if (!visibleIndexes.length) {
+                return;
+            }
+
             slides[current].classList.remove("is-active");
-            current = (index + slides.length) % slides.length;
+
+            if (!visibleIndexes.includes(index)) {
+                index = visibleIndexes[0];
+            }
+
+            current = index;
             slides[current].classList.add("is-active");
 
             if (status) {
-                status.textContent = `${current + 1} / ${slides.length}`;
+                const visiblePosition = visibleIndexes.indexOf(current);
+                status.textContent = `${visiblePosition + 1} / ${visibleIndexes.length}`;
             }
 
             preloadNearby();
@@ -102,7 +138,9 @@
 
         const markThumb = () => {
             thumbs.forEach((thumb, index) => {
+                const hidden = !getVisibleIndexes().includes(index);
                 const selected = index === current;
+                thumb.hidden = hidden;
                 thumb.classList.toggle("is-active", selected);
                 thumb.setAttribute("aria-current", selected ? "true" : "false");
             });
@@ -144,22 +182,54 @@
             markThumb();
         };
 
-        previous.addEventListener("click", () => update(current - 1));
-        next.addEventListener("click", () => update(current + 1));
+        const moveVisible = (offset) => {
+            const visibleIndexes = getVisibleIndexes();
+            const position = getVisiblePosition();
+
+            if (!visibleIndexes.length) {
+                return;
+            }
+
+            update(visibleIndexes[(position + offset + visibleIndexes.length) % visibleIndexes.length]);
+        };
+
+        previous.addEventListener("click", () => moveVisible(-1));
+        next.addEventListener("click", () => moveVisible(1));
 
         carousel.addEventListener("keydown", (event) => {
             if (event.key === "ArrowLeft") {
                 event.preventDefault();
-                update(current - 1);
+                moveVisible(-1);
             }
 
             if (event.key === "ArrowRight") {
                 event.preventDefault();
-                update(current + 1);
+                moveVisible(1);
             }
         });
 
+        filters.forEach((button) => {
+            button.addEventListener("click", () => {
+                activeFilter = button.dataset.galleryFilter || "all";
+
+                filters.forEach((filter) => {
+                    const selected = filter === button;
+                    filter.classList.toggle("is-active", selected);
+                    filter.setAttribute("aria-pressed", selected ? "true" : "false");
+                });
+
+                slides.forEach((slide, index) => {
+                    slide.hidden = !getVisibleIndexes().includes(index);
+                });
+
+                update(getVisibleIndexes()[0]);
+            });
+        });
+
         preloadNearby();
+        slides.forEach((slide, index) => {
+            slide.hidden = !getVisibleIndexes().includes(index);
+        });
         markThumb();
     });
 })();

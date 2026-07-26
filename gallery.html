@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20260724-gallery">
+    <link rel="stylesheet" href="style.css?v=20260726-gallery-tags">
 </head>
 <body class="draft-site">
     <header class="site-header" id="top">
@@ -54,322 +54,416 @@
                 <h1 id="gallery-title">Gallery</h1>
             </header>
 
+            <div class="gallery-filters" aria-label="Filter gallery photographs">
+                <button class="gallery-filter is-active" type="button" data-gallery-filter="all" aria-pressed="true">All</button>
+                <button class="gallery-filter" type="button" data-gallery-filter="conservatoire" aria-pressed="false">Conservatoire</button>
+                <button class="gallery-filter" type="button" data-gallery-filter="performing" aria-pressed="false">Performance</button>
+                <button class="gallery-filter" type="button" data-gallery-filter="teaching" aria-pressed="false">Teaching</button>
+                <button class="gallery-filter" type="button" data-gallery-filter="opera" aria-pressed="false">Opera</button>
+                <button class="gallery-filter" type="button" data-gallery-filter="friends" aria-pressed="false">Teachers, Colleagues &amp; Friends</button>
+                <button class="gallery-filter" type="button" data-gallery-filter="family" aria-pressed="false">Family</button>
+            </div>
+
             <div class="gallery-carousel carousel" data-carousel tabindex="0" aria-label="Photo gallery">
                 <button class="gallery-arrow gallery-arrow--previous" type="button" data-carousel-prev aria-label="Previous photograph">‹</button>
                 <div class="gallery-frame carousel-frame">
-                    <figure class="gallery-slide carousel-slide is-active">
+                    <figure class="gallery-slide carousel-slide is-active" data-gallery-tags="family">
                         <a href="Images/Gallery/Isabelle photos/density215.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/density215.jpeg" alt="Signed copy of Density 21.5 by Edgard Varèse" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Edgard Varèse gave this copy of <em>Density 21.5</em> to my mother, Janine, who was his student in New York in 1948.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire friends">
                         <a href="Images/Gallery/Isabelle photos/00 - 5.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/00 - 5.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Maryse Gauci, Isabelle’s first flute teacher.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire friends">
                         <a href="Images/Gallery/Isabelle photos/isabelleyoung.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/isabelleyoung.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>In Saint-Amour, Jura, with Celine Gautreau, Michel Debost, Marcel Moyse, and a friend of the Moyse family.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire performing">
                         <a href="Images/Gallery/Isabelle photos/isabelleplaybwstudent.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/isabelleplaybwstudent.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Playing in the Orchestre du Conservatoire National Supérieur de Musique de Paris.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire">
                         <a href="Images/Gallery/Isabelle photos/isabelleatconservatoire4.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/isabelleatconservatoire4.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Solfège harmony with Mademoiselle Lequien at the Conservatoire National Supérieur de Musique de Paris, where Isabelle also earned a Premier Prix de Solfège.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire friends">
                         <a href="Images/Gallery/Isabelle photos/Isabelleatconservatoire2.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/Isabelleatconservatoire2.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>In Gaston Crunelle’s class at the Conservatoire National Supérieur de Musique de Paris.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire friends">
                         <a href="Images/Gallery/Isabelle photos/IsabelleconservatoireclassJPR.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/IsabelleconservatoireclassJPR.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>In Jean-Pierre Rampal’s class at the Paris Conservatoire.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire friends">
                         <a href="Images/Gallery/Isabelle photos/Isabelleatconservatoire.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/Isabelleatconservatoire.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Chamber music class with oboist Pierre Pierlot at the Conservatoire National Supérieur de Musique de Paris.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire performing">
                         <a href="Images/Gallery/Isabelle photos/isabelleatconservatoire3.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/isabelleatconservatoire3.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With the orchestra at the Conservatoire National Supérieur de Musique de Paris, where Isabelle also earned a Premier Prix d’Orchestre.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire friends">
                         <a href="Images/Gallery/Isabelle photos/IMG_3407.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/IMG_3407.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Inscribed by Gaston Crunelle to Isabelle Chapuis, with the dedication “avec toute affection” (“with all my affection”).</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire friends">
                         <a href="Images/Gallery/Isabelle photos/JeanPierreRampalInscription.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/JeanPierreRampalInscription.jpeg" alt="Inscribed photograph of Jean-Pierre Rampal" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Inscribed to Isabelle by Jean-Pierre Rampal: “With all my best wishes and my affection.”</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire friends">
                         <a href="Images/Gallery/Isabelle photos/moyse.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/moyse.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>“To the young and talented flutist Isabelle Chapuis, with affectionate remembrance.” — Marcel Moyse, 1970</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire friends">
                         <a href="Images/Gallery/Isabelle photos/marcel-moyse-boswil.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/marcel-moyse-boswil.jpeg" alt="Marcel Moyse at his music camp in Boswil, Switzerland" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Marcel Moyse at his music camp in Boswil, Switzerland, where Isabelle met Aurèle Nicolet, Charles Dagnino, James Galway, and many other flutists.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="conservatoire performing friends">
                         <a href="Images/Gallery/Isabelle photos/Isabelleasstudent.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/Isabelleasstudent.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Rehearsing <em>Oiseaux exotiques</em> with Olivier Messiaen and Yvonne Loriod at the piano for the documentary <em>Olivier Messiaen et les Oiseaux</em>.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/sylvie-beltrando-harp.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/sylvie-beltrando-harp.jpeg" alt="Performing with harpist Sylvie Beltrando" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Performing with harpist Sylvie Beltrando during Mediterranean cruises as a flute and harp duo.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing">
                         <a href="Images/Gallery/Isabelle photos/Isabellepermforningworchbw.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/Isabellepermforningworchbw.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>At the Festival Estival de Paris, performing on Le Pont Neuf with conductor Alexandre Myrat and the Orchestre de Chambre de Paris.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing">
                         <a href="Images/Gallery/Isabelle photos/Isabelleplaying.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/Isabelleplaying.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Performing.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/IsabelleJeanPierre.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/IsabelleJeanPierre.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Jean-Pierre Rampal.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/jprsf.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/jprsf.jpeg" alt="With Jean-Pierre Rampal in San Francisco" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Jean-Pierre Rampal in San Francisco.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/isabelleetalwJPR.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/isabelleetalwJPR.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Jean-Pierre Rampal and Angela Koregelos; top left, Margaret Cook and Leone Buyse.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing">
                         <a href="Images/Gallery/Isabelle photos/isabelleportrainbw.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/isabelleportrainbw.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Isabelle Chapuis.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/ransomwilson.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/ransomwilson.jpeg" alt="With Ransom Wilson" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Ransom Wilson.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/00 - 19.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/00 - 19.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Mark Anderson.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/isabellemarkanderson.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/isabellemarkanderson.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Mark Anderson.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/pierre-yves-artaud.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/pierre-yves-artaud.jpeg" alt="With Pierre-Yves Artaud in Paris, 1999" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Pierre-Yves Artaud in Paris, 1999.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/bernard-demottaz.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/bernard-demottaz.jpeg" alt="With Bernard Demottaz" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Bernard Demottaz.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/william-wibb-bennett.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/william-wibb-bennett.jpeg" alt="With William Wibb Bennett in Los Altos" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With William “Wibb” Bennett in Los Altos.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/michel-debost-jessica-pierce.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/michel-debost-jessica-pierce.jpeg" alt="With Michel Debost and Jessica Pierce" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Michel Debost and Jessica Pierce.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
-                        <a href="Images/Gallery/Isabelle photos/IsabelleinOperaPit.jpeg" target="_blank" rel="noopener noreferrer">
-                            <img src="Images/Gallery/Optimized/IsabelleinOperaPit.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
-                        </a>
-                        <figcaption>In the San José Opera pit with Mary Hargrove and Laurie Seibold.</figcaption>
-                    </figure>
-                    <figure class="gallery-slide carousel-slide">
-                        <a href="Images/Gallery/Isabelle photos/opera-san-jose-orchestra-2015.jpeg" target="_blank" rel="noopener noreferrer">
-                            <img src="Images/Gallery/Optimized/opera-san-jose-orchestra-2015.jpeg" alt="The Opera San José Orchestra, photographed by Dan Mitchell" decoding="async" loading="lazy">
-                        </a>
-                        <figcaption>My second home and family: the Opera San José Orchestra. Photo by Dan Mitchell.</figcaption>
-                    </figure>
-                    <figure class="gallery-slide carousel-slide">
-                        <a href="Images/Gallery/Isabelle photos/irene-dalis.jpeg" target="_blank" rel="noopener noreferrer">
-                            <img src="Images/Gallery/Optimized/irene-dalis.jpeg" alt="With mezzo-soprano and Opera San Jose founder Irene Dalis" decoding="async" loading="lazy">
-                        </a>
-                        <figcaption>With mezzo-soprano and Opera San José founder Irene Dalis.</figcaption>
-                    </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/IsabelleStallmanplaying.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/IsabelleStallmanplaying.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Robert Stallman.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/IsabelleonstagewRobertStallman.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/IsabelleonstagewRobertStallman.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Robert Stallman.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Optimized/IMG_9433.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/IMG_9433.jpeg" alt="Gallery photograph" decoding="async" loading="eager">
                         </a>
                         <figcaption>With Robert Stallman.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/tim-day-stallman.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/tim-day-stallman.jpeg" alt="With Tim Day and Robert Stallman, 2005" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Tim Day and Robert Stallman, 2005.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/jacques-zoon.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/jacques-zoon.jpeg" alt="Dutch flutist Jacques Zoon" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Dutch flutist Jacques Zoon.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="performing friends">
                         <a href="Images/Gallery/Isabelle photos/00 - 20.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/00 - 20.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Rufus Olivier.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="teaching">
                         <a href="Images/Gallery/Isabelle photos/IMG_3409.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/IMG_3409.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>San José State Flute Studio Flute Choir.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="teaching friends">
                         <a href="Images/Gallery/Isabelle photos/IsabelleGardenStudentReunion.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/IsabelleGardenStudentReunion.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>A garden gathering with former SJSU students: Debra Trevaskis, Mark Anderson, Teresa Orozco, Isabelle Chapuis, Karen Stasko Veca, Francesca Cox, Ráyo Furuta, and Elena Yárritu.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="teaching friends">
                         <a href="Images/Gallery/Isabelle photos/teresa-orozco.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/teresa-orozco.jpeg" alt="With former student, great friend, and flutist Teresa Orozco" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With former student, great friend, and flutist Teresa Orozco.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="teaching friends">
                         <a href="Images/Gallery/Isabelle photos/francesca-cox.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/francesca-cox.jpeg" alt="With former student, friend, and flutist Francesca Cox" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With former student, friend, and flutist Francesca Cox.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="teaching friends">
                         <a href="Images/Gallery/Isabelle photos/isabelleAiRayo.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/isabelleAiRayo.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Ai Goldsmith and Ráyo Furuta.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="teaching">
+                        <a href="Images/Gallery/Isabelle photos/sjsu-masterclass-rayo-furuta-students.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/sjsu-masterclass-rayo-furuta-students.jpeg" alt="Master class at San José State University with Ráyo Furuta’s students" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>Master class at San José State University with Ráyo Furuta’s students.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="teaching friends">
                         <a href="Images/Gallery/Isabelle photos/isabelleanniwu.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/isabelleanniwu.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Annie Wu.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="teaching friends">
                         <a href="Images/Gallery/Isabelle photos/IMG_0112.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/IMG_0112.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Robert Stallman, Ai Goldsmith, and Annie Wu.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="teaching friends">
                         <a href="Images/Gallery/Isabelle photos/IMG_3746.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/IMG_3746.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Ráyo Furuta, Robert Stallman, Carol Wincenc, and Ai Goldsmith.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="teaching friends">
                         <a href="Images/Gallery/Isabelle photos/IMG_3736.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/IMG_3736.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Ráyo Furuta, Ai Goldsmith, Robert Stallman, and Dmitry Cogan.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="teaching">
                         <a href="Images/Gallery/Isabelle photos/Isabellegardenflute.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/Isabellegardenflute.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>In the garden.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="family">
                         <a href="Images/Gallery/Isabelle photos/IsabelleDomino.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/IsabelleDomino.jpeg" alt="Gallery photograph" decoding="async" loading="lazy">
                         </a>
                         <figcaption>With Domino in Half Moon Bay.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="family performing">
                         <a href="Images/Gallery/Isabelle photos/tarafdeakacfabw.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/tarafdeakacfabw.jpeg" alt="Taraf de Akacfa ensemble" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Taraf de Akácfa, the Budapest-based ensemble led by Isabelle’s daughter, Lulu.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="family performing">
                         <a href="Images/Gallery/Isabelle photos/tarafdeakacfalive.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/tarafdeakacfalive.jpeg" alt="Taraf de Akacfa in performance" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Taraf de Akácfa in performance.</figcaption>
                     </figure>
-                    <figure class="gallery-slide carousel-slide">
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="family performing">
                         <a href="Images/Gallery/Isabelle photos/tarafdeakacfagroup.jpeg" target="_blank" rel="noopener noreferrer">
                             <img src="Images/Gallery/Optimized/tarafdeakacfagroup.jpeg" alt="Taraf de Akacfa" decoding="async" loading="lazy">
                         </a>
                         <figcaption>Taraf de Akácfa.</figcaption>
                     </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera">
+                        <a href="Images/Gallery/Isabelle photos/opera-california-theatre-marquee-sign.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/opera-california-theatre-marquee-sign.jpeg" alt="The California Theatre marquee" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>The California Theatre marquee.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera">
+                        <a href="Images/Gallery/Isabelle photos/opera-san-jose-marquee.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/opera-san-jose-marquee.jpeg" alt="Opera San José at the California Theatre" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>Opera San José at the California Theatre.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera">
+                        <a href="Images/Gallery/Isabelle photos/opera-california-theatre-entrance.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/opera-california-theatre-entrance.jpeg" alt="California Theatre, home of Opera San José" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>California Theatre, home of Opera San José.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera">
+                        <a href="Images/Gallery/Isabelle photos/opera-california-theatre-interior.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/opera-california-theatre-interior.jpeg" alt="Inside the California Theatre" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>Inside the California Theatre.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera friends">
+                        <a href="Images/Gallery/Isabelle photos/opera-san-jose-orchestra-2015.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/opera-san-jose-orchestra-2015.jpeg" alt="The Opera San José Orchestra, photographed by Dan Mitchell" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>My second home and family: the Opera San José Orchestra. Photo by Dan Mitchell.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera">
+                        <a href="Images/Gallery/Isabelle photos/opera-orchestra-rehearsal.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/opera-orchestra-rehearsal.jpeg" alt="Opera San José orchestra rehearsal" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>Opera San José orchestra rehearsal.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera">
+                        <a href="Images/Gallery/Isabelle photos/opera-brass-section-rehearsal.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/opera-brass-section-rehearsal.jpeg" alt="Opera San José brass section rehearsal" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>Opera San José brass section rehearsal.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera">
+                        <a href="Images/Gallery/Isabelle photos/opera-pit-rehearsal.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/opera-pit-rehearsal.jpeg" alt="In the Opera San José pit during rehearsal" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>In the Opera San José pit during rehearsal.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera friends">
+                        <a href="Images/Gallery/Isabelle photos/opera-san-jose-cast-backstage.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/opera-san-jose-cast-backstage.jpeg" alt="With an Opera San José cast backstage" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>With an Opera San José cast backstage.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera friends">
+                        <a href="Images/Gallery/Isabelle photos/lucia-di-lammermoor-mad-scene.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/lucia-di-lammermoor-mad-scene.jpeg" alt="With the soprano from Donizetti’s Lucia di Lammermoor" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>With the soprano from Donizetti’s <em>Lucia di Lammermoor</em> after the mad scene, one of the most challenging flute solos in the opera repertoire.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera friends">
+                        <a href="Images/Gallery/Isabelle photos/opera-woodwind-section-friends.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/opera-woodwind-section-friends.jpeg" alt="With friends from the Opera San José woodwind section" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>With friends from the Opera San José woodwind section: Patty Mitchell, Mary Hargrove, Pamela Hackl, Mark Brandenburg, Janet Averett, Debbie Kramer, and Carolyn Lockhart.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera friends">
+                        <a href="Images/Gallery/Isabelle photos/IsabelleinOperaPit.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/IsabelleinOperaPit.jpeg" alt="In the San José Opera pit with Mary Hargrove and Laurie Seibold" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>In the San José Opera pit with Mary Hargrove and Laurie Seibold.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera friends">
+                        <a href="Images/Gallery/Isabelle photos/opera-mary-hargrove-flutes.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/opera-mary-hargrove-flutes.jpeg" alt="With Mary Hargrove, flute and piccolo" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>With Mary Hargrove, flute and piccolo.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera friends">
+                        <a href="Images/Gallery/Isabelle photos/irene-dalis.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/irene-dalis.jpeg" alt="With mezzo-soprano and Opera San Jose founder Irene Dalis" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>With mezzo-soprano and Opera San José founder Irene Dalis.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera performing">
+                        <a href="Images/Gallery/Isabelle photos/isabelle-opera-pit-solo.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/isabelle-opera-pit-solo.jpeg" alt="Playing in the Opera San José pit" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>Playing in the Opera San José pit.</figcaption>
+                    </figure>
+                    <figure class="gallery-slide carousel-slide" data-gallery-tags="opera">
+                        <a href="Images/Gallery/Isabelle photos/opera-red-curtain.jpeg" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Gallery/Optimized/opera-red-curtain.jpeg" alt="Curtain" decoding="async" loading="lazy">
+                        </a>
+                        <figcaption>Curtain.</figcaption>
+                    </figure>
                 </div>
                 <button class="gallery-arrow gallery-arrow--next" type="button" data-carousel-next aria-label="Next photograph">›</button>
-                <p class="carousel-status" aria-live="polite">1 / 51</p>
+                <p class="carousel-status" aria-live="polite">1 / 65</p>
             </div>
         </section>
     </main>
-    <script src="site.js?v=20260724-gallery"></script>
+    <script src="site.js?v=20260726-gallery-tags"></script>
     <footer class="site-footer" aria-label="Copyright">
         <p>&copy; 2026 Isabelle Chapuis</p>
     </footer>
