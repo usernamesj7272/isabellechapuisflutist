@@ -2298,15 +2298,16 @@ body.draft-site::before,
 @media (max-width: 900px) {
     .draft-site .site-header {
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr;
+        row-gap: 12px;
     }
 
     .draft-site .nav-button {
-        display: inline-grid;
-        grid-template-columns: auto 24px;
-        column-gap: 10px;
-        height: 40px;
-        min-width: 100px;
+        display: none;
+        grid-template-columns: auto 28px;
+        column-gap: 12px;
+        height: 44px;
+        min-width: 124px;
         align-content: center;
         align-items: center;
         justify-content: end;
@@ -2327,40 +2328,50 @@ body.draft-site::before,
         width: auto;
         height: auto;
         background: transparent;
-        color: #242321;
-        font-size: 0.76rem;
+        color: #1f1f1f;
+        font-size: 0.9rem;
         font-weight: 700;
-        letter-spacing: 0.12em;
+        letter-spacing: 0.14em;
         line-height: 1;
+        text-shadow: 0 1px 8px rgba(248, 246, 241, 0.95);
         text-transform: uppercase;
     }
 
     .draft-site .nav-icon {
         display: block;
         grid-column: 2;
-        color: #242321;
+        color: #1f1f1f;
         font-family: "Source Sans 3", Arial, sans-serif;
-        font-size: 1.45rem;
+        font-size: 1.72rem;
         font-weight: 600;
         line-height: 1;
+        text-shadow: 0 1px 8px rgba(248, 246, 241, 0.95);
     }
 
     .draft-site .site-nav {
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
         grid-column: 1 / -1;
         width: 100%;
-        padding-top: 12px;
+        justify-content: center;
+        gap: 7px 16px;
+        padding-top: 4px;
     }
 
     .draft-site .site-nav a {
-        display: block;
-        width: 100%;
-        padding: 10px 0;
-        border-top: 1px solid var(--simple-rule);
+        display: inline-block;
+        width: auto;
+        padding: 4px 0 5px;
+        border-top: 0;
+        border-bottom: 1px solid rgba(154, 131, 95, 0.28);
+        color: #1f1f1f;
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        text-shadow: 0 1px 8px rgba(248, 246, 241, 0.95);
     }
 
     .draft-site .nav-toggle:checked ~ .site-nav {
-        display: block;
+        display: flex;
     }
 
     .draft-site .hero,
@@ -2373,7 +2384,7 @@ body.draft-site::before,
     }
 
     .draft-site .hero {
-        padding-top: 48px;
+        padding-top: 92px;
     }
 
     .draft-site .hero-copy {
