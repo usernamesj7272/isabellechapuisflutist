@@ -1060,7 +1060,7 @@ body.draft-site::before,
     width: auto;
     gap: clamp(16px, 2vw, 30px);
     padding-top: 0;
-    font-size: 0.78rem;
+    font-size: 0.84rem;
     letter-spacing: 0.12em;
     text-shadow: none;
 }
@@ -1098,6 +1098,13 @@ body.draft-site::before,
 .draft-site .press-label,
 .draft-site .contact-form span {
     color: var(--simple-accent);
+}
+
+.draft-site .press-label {
+    color: #4b3d2a;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
 }
 
 .draft-site .hero {
@@ -1159,8 +1166,8 @@ body.draft-site::before,
 .draft-site .hero-intro {
     max-width: 520px;
     margin-bottom: 1em;
-    color: #242321;
-    font-size: clamp(1.24rem, 1.6vw, 1.4rem);
+    color: #1f1e1c;
+    font-size: clamp(1.3rem, 1.66vw, 1.48rem);
     line-height: 1.72;
 }
 
@@ -1188,9 +1195,9 @@ body.draft-site::before,
 
 .draft-site .photo-credit {
     margin: 10px 0 0;
-    color: #56514b;
+    color: #3f3b36;
     font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: clamp(1rem, 1.08vw, 1.12rem);
+    font-size: clamp(1.06rem, 1.14vw, 1.18rem);
     font-style: italic;
     line-height: 1.35;
     text-align: right;
@@ -1242,13 +1249,13 @@ body.draft-site::before,
 .draft-site .page-intro p {
     max-width: 620px;
     color: var(--simple-muted);
-    font-size: clamp(1.08rem, 1.3vw, 1.24rem);
+    font-size: clamp(1.16rem, 1.38vw, 1.32rem);
     line-height: 1.65;
 }
 
 .draft-site .section-kicker {
     margin-bottom: 18px;
-    font-size: 0.78rem;
+    font-size: 0.84rem;
     font-weight: 600;
     letter-spacing: 0.12em;
 }
@@ -1259,8 +1266,8 @@ body.draft-site::before,
 .draft-site .press-feature p,
 .draft-site .contact-form input,
 .draft-site .contact-form textarea {
-    color: #242321;
-    font-size: clamp(1.2rem, 1.44vw, 1.36rem);
+    color: #1f1e1c;
+    font-size: clamp(1.28rem, 1.52vw, 1.45rem);
     line-height: 1.74;
 }
 
@@ -1340,8 +1347,8 @@ body.draft-site::before,
 }
 
 .draft-site .news-feature-copy {
-    color: #242321;
-    font-size: clamp(1.08rem, 1.25vw, 1.24rem);
+    color: #1f1e1c;
+    font-size: clamp(1.16rem, 1.34vw, 1.32rem);
     line-height: 1.68;
 }
 
@@ -1349,7 +1356,7 @@ body.draft-site::before,
     margin-bottom: 12px;
     color: var(--simple-accent);
     font-family: "Source Sans 3", Arial, sans-serif;
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     font-weight: 600;
     letter-spacing: 0.15em;
     line-height: 1.4;
@@ -1393,7 +1400,7 @@ body.draft-site::before,
 .draft-site .news-details dt {
     color: var(--simple-muted);
     font-family: "Source Sans 3", Arial, sans-serif;
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.14em;
@@ -1402,7 +1409,7 @@ body.draft-site::before,
 
 .draft-site .news-details dd {
     margin: 0;
-    color: #242321;
+    color: #1f1e1c;
 }
 
 .draft-site .biography-text p,
@@ -1480,9 +1487,9 @@ body.draft-site::before,
 
 .draft-site .bio-image figcaption {
     margin-top: 10px;
-    color: #2a2926;
+    color: #1f1e1c;
     font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: clamp(1.16rem, 1.3vw, 1.28rem);
+    font-size: clamp(1.22rem, 1.36vw, 1.36rem);
     font-style: italic;
     line-height: 1.4;
 }
@@ -1592,7 +1599,7 @@ body.draft-site::before,
     margin-bottom: 16px;
     color: var(--simple-accent);
     font-family: "Source Sans 3", Arial, sans-serif;
-    font-size: 0.78rem;
+    font-size: 0.84rem;
     font-weight: 600;
     letter-spacing: 0.12em;
     line-height: 1.4;
@@ -1722,7 +1729,7 @@ body.draft-site::before,
 .draft-site .recording-performers-label {
     margin: 0 0 8px;
     color: var(--simple-accent);
-    font-size: 0.78rem;
+    font-size: 0.84rem;
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -1733,28 +1740,28 @@ body.draft-site::before,
     gap: 3px;
     margin: 0 0 18px;
     padding: 0;
-    color: #242321;
-    font-size: clamp(1.12rem, 1.3vw, 1.24rem);
+    color: #1f1e1c;
+    font-size: clamp(1.18rem, 1.36vw, 1.32rem);
     line-height: 1.55;
     list-style: none;
 }
 
 .draft-site .featured-pair .recording-performers {
     margin-top: 10px;
-    font-size: clamp(1rem, 1.08vw, 1.1rem);
+    font-size: clamp(1.08rem, 1.16vw, 1.18rem);
     line-height: 1.5;
 }
 
 .draft-site .recording-copy p:not(.press-label):not(.recording-performers-label) {
     max-width: 720px;
     margin: 0;
-    color: #242321;
-    font-size: clamp(1.2rem, 1.44vw, 1.36rem);
+    color: #1f1e1c;
+    font-size: clamp(1.28rem, 1.52vw, 1.45rem);
     line-height: 1.74;
 }
 
 .draft-site .featured-pair .recording-copy p:not(.press-label):not(.recording-performers-label) {
-    font-size: clamp(1.2rem, 1.44vw, 1.36rem);
+    font-size: clamp(1.28rem, 1.52vw, 1.45rem);
     line-height: 1.74;
 }
 
@@ -1764,7 +1771,7 @@ body.draft-site::before,
     padding: 10px 16px;
     border: 1px solid var(--simple-rule);
     color: var(--simple-ink);
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-decoration: none;
@@ -1845,8 +1852,8 @@ body.draft-site::before,
 .draft-site .media-item p {
     max-width: 720px;
     margin: 0;
-    color: #242321;
-    font-size: clamp(1.2rem, 1.44vw, 1.36rem);
+    color: #1f1e1c;
+    font-size: clamp(1.28rem, 1.52vw, 1.45rem);
     line-height: 1.74;
 }
 
@@ -1888,7 +1895,7 @@ body.draft-site::before,
     border: 1px solid rgba(255, 255, 255, 0.56);
     background: rgba(36, 35, 33, 0.62);
     color: #fff;
-    font-size: 0.66rem;
+    font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -1912,8 +1919,8 @@ body.draft-site::before,
 }
 
 .draft-site .media-note p {
-    color: #242321;
-    font-size: clamp(1.12rem, 1.24vw, 1.22rem);
+    color: #1f1e1c;
+    font-size: clamp(1.2rem, 1.32vw, 1.3rem);
 }
 
 .draft-site .press-feature,
@@ -2010,7 +2017,7 @@ body.draft-site::before,
     border: 1px solid var(--simple-rule);
     color: var(--simple-ink);
     font-family: "Source Sans 3", Arial, sans-serif;
-    font-size: 0.78rem;
+    font-size: 0.84rem;
     font-weight: 600;
     letter-spacing: 0.14em;
     padding: 13px 20px;
@@ -2081,8 +2088,8 @@ body.draft-site::before,
 }
 
 .draft-site .permission-check span {
-    color: #34322f;
-    font-size: clamp(1.02rem, 1.18vw, 1.14rem);
+    color: #24221f;
+    font-size: clamp(1.1rem, 1.26vw, 1.22rem);
     font-weight: 400;
     letter-spacing: 0;
     line-height: 1.55;
@@ -2093,7 +2100,7 @@ body.draft-site::before,
     margin: -2px 0 0;
     color: var(--simple-muted);
     font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: clamp(1.16rem, 1.34vw, 1.3rem);
+    font-size: clamp(1.24rem, 1.42vw, 1.38rem);
     font-style: italic;
     line-height: 1.45;
 }
@@ -2150,7 +2157,7 @@ body.draft-site::before,
     border: 1px dashed rgba(154, 131, 95, 0.45);
     background: rgba(251, 250, 246, 0.72);
     color: var(--simple-muted);
-    font-size: clamp(1.05rem, 1.4vw, 1.22rem);
+    font-size: clamp(1.12rem, 1.48vw, 1.3rem);
     line-height: 1.5;
     text-align: center;
 }
@@ -2169,12 +2176,12 @@ body.draft-site::before,
     color: var(--simple-ink);
     cursor: pointer;
     font-family: "Source Sans 3", Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 1.08rem;
 }
 
 .draft-site .carousel-status {
     color: var(--simple-muted);
-    font-size: 0.95rem;
+    font-size: 1.02rem;
 }
 
 .draft-site .gallery-section {
@@ -2201,7 +2208,7 @@ body.draft-site::before,
     color: var(--simple-ink);
     cursor: pointer;
     font-family: "Source Sans 3", Arial, sans-serif;
-    font-size: 0.95rem;
+    font-size: 1.02rem;
     letter-spacing: 0.04em;
     line-height: 1;
     padding: 0.68rem 1rem;
@@ -2276,9 +2283,9 @@ body.draft-site::before,
     max-width: 760px;
     min-height: 3.5em;
     margin: 16px auto 0;
-    color: #2a2926;
+    color: #1f1e1c;
     font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: clamp(1.14rem, 1.32vw, 1.3rem);
+    font-size: clamp(1.22rem, 1.4vw, 1.38rem);
     font-style: italic;
     line-height: 1.45;
 }
@@ -2397,7 +2404,7 @@ body.draft-site::before,
     margin: 16px auto 0;
     color: #f7f3ee;
     font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: clamp(1.12rem, 1.5vw, 1.34rem);
+    font-size: clamp(1.2rem, 1.58vw, 1.42rem);
     font-style: italic;
     line-height: 1.42;
 }
@@ -2411,7 +2418,7 @@ body.draft-site::before,
     color: #f7f3ee;
     cursor: pointer;
     font-family: "Source Sans 3", Arial, sans-serif;
-    font-size: 0.76rem;
+    font-size: 0.84rem;
     font-weight: 600;
     letter-spacing: 0.16em;
     padding: 10px 13px;
@@ -2427,8 +2434,8 @@ body.draft-site::before,
     max-width: 1160px;
     margin: 0 auto;
     padding: 24px clamp(22px, 5vw, 72px) 32px;
-    color: #5f5b55;
-    font-size: 0.92rem;
+    color: #3f3b36;
+    font-size: 1rem;
     line-height: 1.4;
     text-align: center;
 }
@@ -2439,7 +2446,7 @@ body.draft-site::before,
 
 .draft-site .site-footer .site-credit {
     margin-top: 4px;
-    font-size: 0.84rem;
+    font-size: 0.92rem;
 }
 
 .draft-site .site-footer a {
@@ -2523,7 +2530,7 @@ body.draft-site::before,
         border-top: 0;
         border-bottom: 1px solid transparent;
         color: #1f1f1f;
-        font-size: 0.72rem;
+        font-size: 0.8rem;
         letter-spacing: 0.14em;
         text-shadow: 0 1px 8px rgba(248, 246, 241, 0.95);
     }
@@ -2702,8 +2709,17 @@ body.draft-site::before,
         max-width: 260px;
     }
 
+    .draft-site .featured-pair .recording-cover.logo-thumb {
+        width: min(100%, 260px);
+        max-width: 260px;
+    }
+
     .draft-site .featured-pair .recording-cover img {
         max-width: 260px;
+    }
+
+    .draft-site .featured-pair .recording-cover.logo-thumb img {
+        max-width: 190px;
     }
 
     .draft-site .media-grid .media-embed,
