@@ -1820,13 +1820,15 @@ body.draft-site::before,
     gap: clamp(20px, 3vw, 32px);
 }
 
-.draft-site .media-collection h2 {
+.draft-site .media-collection > h2 {
     margin: 0;
     color: var(--simple-ink);
-    font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: clamp(2rem, 3.4vw, 3rem);
-    font-weight: 500;
-    line-height: 1.05;
+    font-family: "Source Sans 3", Arial, sans-serif;
+    font-size: clamp(1.18rem, 1.8vw, 1.48rem);
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    line-height: 1.22;
+    text-transform: uppercase;
 }
 
 .draft-site .media-grid {
@@ -2519,7 +2521,7 @@ body.draft-site::before,
         width: auto;
         padding: 4px 0 5px;
         border-top: 0;
-        border-bottom: 1px solid rgba(154, 131, 95, 0.28);
+        border-bottom: 1px solid transparent;
         color: #1f1f1f;
         font-size: 0.72rem;
         letter-spacing: 0.14em;
@@ -2527,6 +2529,7 @@ body.draft-site::before,
     }
 
     .draft-site .site-nav a[aria-current="page"] {
+        border-bottom-color: currentColor;
         text-decoration: none;
     }
 
